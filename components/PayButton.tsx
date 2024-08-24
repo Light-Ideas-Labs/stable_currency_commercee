@@ -27,7 +27,7 @@ export const PayButton = ({ price }: { price: number }) => {
 
       const data = await writeContractAsync({
         chainId: celo.id,
-        address: '0x456a3d042c0dbd3db53d5489e98dfb038553b0d0',
+        address: '0x456a3d042c0dbd3db53d5489e98dfb038553b0d0', // cKES Main Contract Address
         functionName: 'transfer',
         abi: erc20Abi,
         args: [
